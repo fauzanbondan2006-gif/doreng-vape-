@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #850605;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.welcome-box {
+    width: 501px;
+    height: 47px; /* Sesuai ukuran Figma kamu */
+    background-color: #F5F5F5;
+    border: 3px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jacques Francois', serif;
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.logo-wrapper {
+    position: relative;
+    width: 725px;
+    height: 772.75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logo {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.smoke-effect {
+    position: absolute;
+    width: 120%; 
+    mix-blend-mode: screen; /* Biar background hitam di file "ASAP GRATIS" hilang */
+    opacity: 0.8;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.arrow-btn {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-btn img {
+    width: 60px;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: -200px;
+}
+
+.small-logo {
+    width: 329px;
+    height: 350.67px;
+    object-fit: contain;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doreng Vape - Welcome</title>
+    <meta name="google-site-verification" content="ci9GrGn8tXZQ7DWQbVNNY4WFk1jhF7a3NDwC558Ba0s" />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #A03A3C; /* Warna Merah Lu */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Crimson Text', serif;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Banner Putih Atas */
+        .welcome-banner {
+            background-color: #E8F1F2;
+            padding: 10px 30px;
+            border: 2px solid #1A1A1A;
+            margin-bottom: 30px;
+            box-shadow: 4px 4px 0px #000;
+            text-align: center;
+            width: fit-content;
+        }
+
+        .welcome-banner h1 {
+            font-size: clamp(18px, 4vw, 35px);
+            color: #2D4157;
+            text-transform: uppercase;
+        }
+
+        /* Logo Utama */
+        .logo-container {
+            width: 85%;
+            max-width: 350px;
+            margin-bottom: 30px;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Navigasi Panah */
+        .arrow-link {
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        /* Pastikan nama file gambarnya PANAH.png sesuai folder lu */
+        .arrow-img {
+            width: 70px; 
+            height: auto;
+        }
+
+        .arrow-link:hover {
+            transform: scale(1.2);
+        }
+
+        /* KHUSUS HP */
+        @media (max-width: 480px) {
+            .logo-container { max-width: 280px; }
+            .arrow-img { width: 60px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-banner">
+        <h1>WELCOME TO OUR SHOP</h1>
+    </div>
+
+    <div class="logo-container">
+        <img src="logo_vape.png" alt="Logo Doreng">
+    </div>
+
+    <a href="slide2.html" class="arrow-link">
+        <img src="PANAH.png" alt="Next" class="arrow-img">
+    </a>
+
+</body>
+</html>

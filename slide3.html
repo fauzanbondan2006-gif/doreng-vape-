@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah - Doreng Vape Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background-color: #B2BABB; /* Abu-abu Original */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', sans-serif;
+            color: #1A1A1A;
+            padding: 20px;
+        }
+
+        .content-wrapper {
+            max-width: 800px;
+            width: 100%;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: clamp(22px, 5vw, 28px);
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: clamp(16px, 4vw, 20px);
+            font-style: italic;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .nav-footer {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            width: 150px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 14px;
+            transition: 0.3s;
+            color: #000;
+            text-transform: uppercase;
+        }
+
+        .btn-back { background-color: #FADBD8; }
+        .btn-next { background-color: #D1F2EB; }
+        
+        .logo-footer {
+            width: 100px;
+            height: auto;
+        }
+
+        .btn:hover { transform: scale(1.05); }
+
+        /* KHUSUS HP */
+        @media (max-width: 480px) {
+            .nav-footer { flex-direction: column; }
+            .content-wrapper { text-align: center; }
+            .btn { width: 200px; }
+            .logo-footer { order: -1; margin-bottom: 10px; } /* Logo jadi paling atas di HP */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <h2>SEJARAH SINGKAT:</h2>
+        <p>
+            Doreng vape berdiri di tahun 2017 sekitaran bulan awal september di suatu kontrakan kecil di wilayah langensari kota banjar jawa barat. Mengembangkan sayap nya di 5 cabang yang ada di: Kota banjar, Langensari, Majenang, Banjarsari, Sidareja.
+        </p>
+    </div>
+
+    <div class="nav-footer">
+        <a href="slide2.html" class="btn btn-back">BACK</a>
+
+        <img src="logo_vape.png" alt="Logo" class="logo-footer">
+
+        <a href="slide4.html" class="btn btn-next">NEXT</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* style_sejarah.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,700;1,400;1,700&display=swap');
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #C4C4C4; /* Abu-abu sesuai desain Figma lu */
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #000000;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Judul SEJARAH SINGKAT */
+h2 {
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Teks isi sejarah (Italic sesuai Figma) */
+.content-text {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 60px;
+    text-align: left; /* Rata kiri sesuai gambar lu */
+}
+
+/* Navigasi Bawah (Back - Logo - Next) */
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* Tombol Back (Merah Kalem) */
+.btn-back {
+    background-color: #A03A3C;
+    color: white;
+    padding: 12px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+/* Tombol Next (Hijau Figma) */
+.btn-next {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.btn-back:hover, .btn-next:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.logo-footer {
+    width: 130px;
+    height: auto;
+}
+
+/* --- RESPONSIVE IPHONE / HP --- */
+@media (max-width: 480px) {
+    h2 { 
+        font-size: 22px; 
+    }
+    .content-text { 
+        font-size: 17px; 
+        margin-bottom: 40px;
+    }
+    .footer-nav { 
+        gap: 15px; 
+    }
+    .btn-back, .btn-next { 
+        padding: 10px 20px; 
+        font-size: 14px; 
+    }
+    .logo-footer { 
+        width: 80px; 
+    }
+}
