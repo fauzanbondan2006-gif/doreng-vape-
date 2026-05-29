@@ -3,90 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doreng Vape - Welcome</title>
-    <meta name="google-site-verification" content="200fUdBQTJ7jCV8LC3A5ZNQt04MhWJkENxh8Moc-zv4" />
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            background-color: #A03A3C; /* Warna Merah Lu */
-            min-height: 100vh; 
-            display: flex; 
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Crimson Text', serif;
-            padding: 20px;
-            overflow: hidden;
-        }
-
-        /* Banner Putih Atas */
-        .welcome-banner {
-            background-color: #E8F1F2;
-            padding: 10px 30px;
-            border: 2px solid #1A1A1A;
-            margin-bottom: 30px;
-            box-shadow: 4px 4px 0px #000;
-            text-align: center;
-            width: fit-content;
-        }
-
-        .welcome-banner h1 {
-            font-size: clamp(18px, 4vw, 35px);
-            color: #2D4157;
-            text-transform: uppercase;
-        }
-
-        /* Logo Utama */
-        .logo-container {
-            width: 85%;
-            max-width: 350px;
-            margin-bottom: 30px;
-        }
-
-        .logo-container img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Navigasi Panah */
-        .arrow-link {
-            text-decoration: none;
-            transition: 0.3s;
-            display: inline-block;
-        }
-
-        /* Pastikan nama file gambarnya PANAH.png sesuai folder lu */
-        .arrow-img {
-            width: 70px; 
-            height: auto;
-        }
-
-        .arrow-link:hover {
-            transform: scale(1.2);
-        }
-
-        /* KHUSUS HP */
-        @media (max-width: 480px) {
-            .logo-container { max-width: 280px; }
-            .arrow-img { width: 60px; }
-        }
-    </style>
+    <title>Doreng Vape Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="welcome-banner">
-        <h1>WELCOME TO OUR SHOP</h1>
-    </div>
+    <div class="container">
+        <header class="header-section">
+            <img src="logo_vape.png" alt="Logo Doreng Vape Store" class="main-logo">
+        </header>
 
-    <div class="logo-container">
-        <img src="logo_vape.png" alt="Logo Doreng">
-    </div>
+        <section class="hero-section">
+            <h1 class="slogan">BERAWAL DARI PASION, TUMBUH MENJADI KOMUNITAS</h1>
+        </section>
 
-    <a href="slide2.html" class="arrow-link">
-        <img src="PANAH.png" alt="Next" class="arrow-img">
-    </a>
+        <section class="story-section">
+            <h2 class="section-title">CERITA KAMI</h2>
+            
+            <div class="story-point">
+                <h3>2017</h3>
+                <p>Berdiri pada awal September 2017 di sebuah kontrakan kecil di wilayah Langensari, Kota Banjar, Jawa Barat.</p>
+            </div>
+
+            <div class="story-point">
+                <h3>Perkembangan</h3>
+                <p>Berkat dukungan komunitas, Doreng Vape berhasil mengepakkan sayap dan berkembang hingga memiliki 5 cabang strategis.</p>
+            </div>
+
+            <div class="story-point">
+                <h3>Lokasi Cabang Kami</h3>
+                <p class="cabang-list">Kota Banjar &bull; Langensari &bull; Majenang &bull; Banjarsari &bull; Sidareja</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            
+            <div class="card-link">
+                <a href="https://instagram.com" target="_blank" class="btn-main">IKUTI INSTAGRAM KAMI</a>
+                <div class="sub-list">
+                    <a href="https://instagram.com/dorengvape_kotabanjar" target="_blank">@dorengvape_kotabanjar</a>
+                    <a href="https://instagram.com/dorengvape_langensari" target="_blank">@dorengvape_langensari</a>
+                    <a href="https://instagram.com/dorengvape_majenang" target="_blank">@dorengvape_majenang</a>
+                    <a href="https://instagram.com/dorengvape_banjarsari" target="_blank">@dorengvape_banjarsari</a>
+                    <a href="https://instagram.com/sidareja_vapestore" target="_blank">@sidareja_vapestore</a>
+                </div>
+            </div>
+
+            <div class="card-link">
+                <a href="https://wa.me/62895329761948" target="_blank" class="btn-main">HUBUNGI WHATSAPP ADMIN</a>
+                <div class="sub-list grid-wa">
+                    <a href="https://wa.me/62895329761948" target="_blank">Langensari: 0895-3297-61948</a>
+                    <a href="https://wa.me/6289665447244" target="_blank">Majenang: 0896-6544-7244</a>
+                    <a href="https://wa.me/6285163244369" target="_blank">Sidareja: 0851-6324-4369</a>
+                    <a href="https://wa.me/62895406358919" target="_blank">Banjarsari: 0895-4063-58919</a>
+                    <a href="https://wa.me/6285194223364" target="_blank">Kota Banjar: 0851-9422-3364</a>
+                </div>
+                <p class="jam-operasional">Buka Setiap Hari: 09.00 - 22.00 WIB</p>
+            </div>
+
+        </section>
+    </div>
 
 </body>
 </html>
