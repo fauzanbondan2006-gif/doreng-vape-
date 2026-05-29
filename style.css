@@ -5,80 +5,160 @@
 }
 
 body {
-    background-color: #850605;
+    background-color: #0D1117; /* Hitam Canvas Figma */
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
-    overflow-x: hidden;
+    padding: 20px;
 }
 
-.main-container {
+/* CONTAINER MENIRU UKURAN LAYAR HP */
+.container {
+    width: 100%;
+    max-width: 440px; /* Ukuran lebar iPhone 16 Pro Max */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    position: relative;
+    text-align: center;
+    padding: 10px;
 }
 
-.welcome-box {
-    width: 501px;
-    height: 47px; /* Sesuai ukuran Figma kamu */
-    background-color: #F5F5F5;
-    border: 3px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Jacques Francois', serif;
-    font-size: 36px;
-    color: #000;
-    margin-bottom: 40px;
-}
-
-.logo-wrapper {
-    position: relative;
-    width: 725px;
-    height: 772.75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* LOGO SECTION */
+.header-section {
+    margin-bottom: 24px;
+    margin-top: 10px;
 }
 
 .main-logo {
-    width: 100%;
+    width: 120px; /* Sesuai ukuran 120px di Figma */
     height: auto;
-    z-index: 2;
+    display: block;
 }
 
-.smoke-effect {
-    position: absolute;
-    width: 120%; 
-    mix-blend-mode: screen; /* Biar background hitam di file "ASAP GRATIS" hilang */
-    opacity: 0.8;
-    z-index: 3;
-    pointer-events: none;
+/* SLOGAN UTAMA */
+.hero-section {
+    margin-bottom: 32px;
 }
 
-.arrow-btn {
-    position: absolute;
-    right: -50px;
-    top: 50%;
-    transform: translateY(-50%);
+.slogan {
+    font-family: 'Syne', sans-serif;
+    font-size: 34px; /* Menyesuaikan agar proporsional di web */
+    font-weight: 800;
+    line-height: 1.2;
+    color: #FFFFFF;
 }
 
-.arrow-btn img {
-    width: 60px;
+/* SEJARAH SECTION */
+.story-section {
+    margin-bottom: 32px;
+    width: 100%;
 }
 
-.footer-logos {
+.section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    color: #00F0FF; /* Cyan Neon */
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.story-point {
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.story-point h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+}
+
+.story-point p {
+    font-size: 14px;
+    color: #8B949E; /* Abu-abu Figma */
+    line-height: 1.5;
+}
+
+.cabang-list {
+    font-weight: 500;
+}
+
+/* KOTAK / CARD SOSIAL MEDIA */
+.contact-section {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin-top: -200px;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.small-logo {
-    width: 329px;
-    height: 350.67px;
-    object-fit: contain;
+.card-link {
+    background-color: #161B22; /* Warna dasar kotak */
+    border: 1px solid #00F0FF; /* Border Neon Cyan pilihan kedua */
+    border-radius: 12px; /* Tumpul 12px di Figma */
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* TOMBOL UTAMA DALAM KOTAK */
+.btn-main {
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #00F0FF;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    opacity: 0.8;
+}
+
+/* DAFTAR LINK DI BAWAH TOMBOL */
+.sub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.sub-list a {
+    font-size: 12px;
+    color: #8B949E;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.sub-list a:hover {
+    color: #FFFFFF;
+}
+
+/* KHUSUS DISPLAY GRID WHATSAPP AGAR KELIATAN SEPERTI DI FIGMA */
+.grid-wa {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+}
+
+@media (min-width: 360px) {
+    .grid-wa {
+        grid-template-columns: 1fr; /* Tetap satu kolom agar rapi di HP */
+    }
+}
+
+.jam-operasional {
+    font-size: 11px;
+    color: #8B949E;
+    font-style: italic;
+    margin-top: 4px;
+    border-top: 1px dashed #30363D;
+    padding-top: 8px;
+    width: 100%;
 }
